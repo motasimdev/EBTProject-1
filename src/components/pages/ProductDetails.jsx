@@ -20,9 +20,9 @@ const ProductDetails = () => {
         <div className="container m-auto">
           <div className="p-5 bg-gray-300">
             <div className="">
-              <img src={productFinal.thumbnail} alt="" />
-              <h3 className="text-4xl">{productFinal.title}</h3>
-              <p className="text-xl">{productFinal.description}</p>
+              <img src={productFinal.thumbnail} alt="" className=""/>
+              <h3 className="text-4xl font-bold my-4">{productFinal.title}</h3>
+              <p className="text-xl font-semibold pr-[350px]">{productFinal.description}</p>
             </div>
           </div>
         </div>
