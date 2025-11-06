@@ -3,7 +3,7 @@ const Home = () => {
 
   return (
     <div className="container m-auto">
-        Home
+        Shop
     </div>
   );
 };

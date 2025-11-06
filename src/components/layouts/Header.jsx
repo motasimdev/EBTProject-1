@@ -6,10 +6,10 @@ const Header = () => {
     <section className="py-5 bg-gray-400 text-center">
       <div className="max-w-[1280px] m-auto">
         <ul className="flex items-center justify-center gap-x-4 text-center">
-          <NavLink to={"/"}>
+          <NavLink to={"/shop"}>
             <li className="font-semibold">Home</li>
           </NavLink>
-          <NavLink to={"/shop"}>
+          <NavLink to={"/"}>
             <li className="font-semibold">Shop</li>
           </NavLink>
           <NavLink to={"/about"}>
