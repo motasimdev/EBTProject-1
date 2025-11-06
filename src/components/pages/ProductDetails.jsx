@@ -1,0 +1,34 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router";
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const [productFinal , setProductFinal] = useState({})
+  useEffect(() => {
+    async function all() {
+      let singleProduct = await axios.get(`https://dummyjson.com/products/${id}`);
+      setProductFinal(singleProduct.data)
+    }
+    
+    all();
+  }, []);
+
+  return (
+    <>
+      <section className="py-5 ">
+        <div className="container m-auto">
+          <div className="p-5 bg-gray-300">
+            <div className="">
+              <img src={productFinal.thumbnail} alt="" />
+              <h3 className="text-4xl">{productFinal.title}</h3>
+              <p className="text-xl">{productFinal.description}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ProductDetails;
