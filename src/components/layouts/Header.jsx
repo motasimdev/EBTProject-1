@@ -17,16 +17,16 @@ const Header = () => {
           </div>
           <div className="">
             <ul className="flex items-center justify-center gap-x-4 text-center">
-              <NavLink to={"/shop"}>
+              <NavLink to={"/"}>
                 <li className="font-semibold">Home</li>
               </NavLink>
               <NavLink to={"/about"}>
                 <li className="font-semibold">About Us</li>
               </NavLink>
-              <NavLink to={"/"}>
+              <NavLink to={"/shop"}>
                 <li className="font-semibold">Shop</li>
               </NavLink>
-              <NavLink to={"/"}>
+              <NavLink to={"*"}>
                 <li className="font-semibold">Contact</li>
               </NavLink>
             </ul>
